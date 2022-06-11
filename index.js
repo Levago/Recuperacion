@@ -1,12 +1,8 @@
-//Shift
-//The shift() method removes the first element from the array and returns it. This method modifies the length of the array.
-//The following code displays the contents of the myFish array before and after the first element is removed. It also shows the deleted item
-var miPescado = ['ángel', 'payaso', 'mandarín', 'cirujano'];
+//Unshift
+//The unshift() method adds one or more elements to the beginning of the array, and returns the new length of the array.
+//in this example we are going to add values ​​in the array.
+const array1 = [1, 2, 3];
 
-console.log('miPescado antes: ' + miPescado);
+console.log(array1.unshift(4, 5));
 
-var eliminado = miPescado.shift();
-
-console.log('miPescado después: ' + miPescado);
-
-console.log('Elemento eliminado: ' + eliminado);
+console.log(array1);
