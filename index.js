@@ -1,8 +1,12 @@
-//Concat
-//The concat() method is used to join two or more arrays. This method does not change existing arrays, but returns a new array.
-//case of use in this case we are going to unite these three arrangements.
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
-const array3 = array1.concat(array2);
+//Shift
+//The shift() method removes the first element from the array and returns it. This method modifies the length of the array.
+//The following code displays the contents of the myFish array before and after the first element is removed. It also shows the deleted item
+var miPescado = ['ángel', 'payaso', 'mandarín', 'cirujano'];
 
-console.log(array3);
+console.log('miPescado antes: ' + miPescado);
+
+var eliminado = miPescado.shift();
+
+console.log('miPescado después: ' + miPescado);
+
+console.log('Elemento eliminado: ' + eliminado);
