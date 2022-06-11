@@ -1,8 +1,12 @@
-//Hosting
-//Hoisting is a term that you will not find used in any specification prior to ECMAScript® 2015 Language Specification. The concept of hoisting was intended as a general way of referring to how execution contexts work in JavaScript (specifically the creation and execution phases). However, the concept can be a bit confusing at first.
+//Promise 
+//A Promise is an object that represents the completion or failure of an asynchronous operation. Since most people consume promises already created, this guide will first explain how to consume them, and then how to create them.
 
-function nombreDelGato(nombre) {
-    console.log("El nombre de mi gato es " + nombre);
+function exitoCallback(resultado) {
+    console.log("Archivo de audio disponible en la URL " + resultado);
   }
   
-  nombreDelGato("Maurizzio");
+  function falloCallback(error) {
+    console.log("Error generando archivo de audio " + error);
+  }
+  
+  crearArchivoAudioAsync(audioConfig, exitoCallback, falloCallback);
