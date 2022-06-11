@@ -1,8 +1,12 @@
-//Find
-// find returns the value of the first element of the array that satisfies the given test function.
-//case of use in this case look for the following numbers of the array.
-const array1 = [5, 12, 8, 130, 44];
+//Reduce
+//reduce executes a reduce function on each element of an array, returning a single value as a result.
+//case of use for this case the following array of numbers will be reduced.
+const array = [1, 2, 3, 4];
 
-const found = array1.find(element => element > 10);
+const initialValue = 0;
+const sumWithInitial = array.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
 
-console.log(found);
+console.log(sumWithInitial);
