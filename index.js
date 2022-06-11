@@ -1,12 +1,8 @@
-//map calls the provided callback function once per element of an array, in order, and builds a new array with the results.
-//use case: The following code takes an array of cars and creates a new array containing the new formatted cars.
+//Filter
+// filter() creates a new array with all the elements that meet the condition implemented by the given function.
+//case of use for this the different motorcycle masks are being filtered
+const bikes = ['Harley', 'Italika', 'Royal', 'Dinamo', 'Trymp', 'Indian'];
 
-var kvArray = [{id:1, value:100000},
-               {id:2, value:200000},
-               {id:3, value: 300000}];
+const result = words.filter(bikes => bikes.length > 6);
 
-var reformattedArray = kvArray.map(function(car){
-   var rcar = {};
-   rcar[car.id] = obj.value;
-   return rcar;
-});
+console.log(result);
