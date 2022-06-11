@@ -1,8 +1,8 @@
-//Filter
-// filter() creates a new array with all the elements that meet the condition implemented by the given function.
-//case of use for this the different motorcycle masks are being filtered
-const bikes = ['Harley', 'Italika', 'Royal', 'Dinamo', 'Trymp', 'Indian'];
+//Find
+// find returns the value of the first element of the array that satisfies the given test function.
+//case of use in this case look for the following numbers of the array.
+const array1 = [5, 12, 8, 130, 44];
 
-const result = words.filter(bikes => bikes.length > 6);
+const found = array1.find(element => element > 10);
 
-console.log(result);
+console.log(found);
