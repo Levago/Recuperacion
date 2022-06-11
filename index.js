@@ -1,9 +1,8 @@
-//Replace
-//The replace() method returns a new string with some or all of the matches of a pattern, each of these matches being replaced by replace. The pattern can be a string or a RegExp, and the replacement can be a string or a function that will be called for each match. If the pattern is a string, only the first match will be replaced.
+//Hosting
+//Hoisting is a term that you will not find used in any specification prior to ECMAScript® 2015 Language Specification. The concept of hoisting was intended as a general way of referring to how execution contexts work in JavaScript (specifically the creation and execution phases). However, the concept can be a bit confusing at first.
 
-const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
-
-console.log(p.replace('dog', 'monkey'));
-
-const regex = /Dog/i;
-console.log(p.replace(regex, 'ferret'));
+function nombreDelGato(nombre) {
+    console.log("El nombre de mi gato es " + nombre);
+  }
+  
+  nombreDelGato("Maurizzio");
