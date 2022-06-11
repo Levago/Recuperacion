@@ -1,7 +1,9 @@
-//FindIndex
-//The findIndex() method returns the index of the first element of an array that matches the given test function. Otherwise it returns -1.
-const array1 = [5, 12, 8, 130, 44];
+//Replace
+//The replace() method returns a new string with some or all of the matches of a pattern, each of these matches being replaced by replace. The pattern can be a string or a RegExp, and the replacement can be a string or a function that will be called for each match. If the pattern is a string, only the first match will be replaced.
 
-const isLargeNumber = (element) => element > 13;
+const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
 
-console.log(array1.findIndex(isLargeNumber));
+console.log(p.replace('dog', 'monkey'));
+
+const regex = /Dog/i;
+console.log(p.replace(regex, 'ferret'));
