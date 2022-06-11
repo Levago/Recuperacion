@@ -1,7 +1,12 @@
-//FindIndex
-//The findIndex() method returns the index of the first element of an array that matches the given test function. Otherwise it returns -1.
-const array1 = [5, 12, 8, 130, 44];
+//map calls the provided callback function once per element of an array, in order, and builds a new array with the results.
+//use case: The following code takes an array of cars and creates a new array containing the new formatted cars.
 
-const isLargeNumber = (element) => element > 13;
+var kvArray = [{id:1, value:100000},
+               {id:2, value:200000},
+               {id:3, value: 300000}];
 
-console.log(array1.findIndex(isLargeNumber));
+var reformattedArray = kvArray.map(function(car){
+   var rcar = {};
+   rcar[car.id] = obj.value;
+   return rcar;
+});
