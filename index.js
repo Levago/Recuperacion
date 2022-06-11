@@ -1,12 +1,8 @@
-//Reduce
-//reduce executes a reduce function on each element of an array, returning a single value as a result.
-//case of use for this case the following array of numbers will be reduced.
-const array = [1, 2, 3, 4];
+//Concat
+//The concat() method is used to join two or more arrays. This method does not change existing arrays, but returns a new array.
+//case of use in this case we are going to unite these three arrangements.
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
 
-const initialValue = 0;
-const sumWithInitial = array.reduce(
-  (previousValue, currentValue) => previousValue + currentValue,
-  initialValue
-);
-
-console.log(sumWithInitial);
+console.log(array3);
